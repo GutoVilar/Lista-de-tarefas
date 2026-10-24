@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas | To-Do List</title>
+    <!-- Ligação ao arquivo CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1><i class="fa-solid fa-list-check"></i> Minhas Tarefas</h1>
+            <p>Organize o seu dia a dia de forma simples</p>
+        </header>
+
+        <!-- Formulário para adicionar nova tarefa -->
+        <div class="task-form">
+            <input type="text" id="taskInput" placeholder="O que você precisa fazer hoje?">
+            <button id="addTaskBtn"><i class="fa-solid fa-plus"></i> Adicionar</button>
+        </div>
+
+        <!-- Lista de Tarefas -->
+        <ul id="taskList" class="task-list">
+            <!-- As tarefas vão aparecer aqui dinamicamente -->
+        </ul>
+
+        <!-- Rodapé da aplicação com contador -->
+        <footer>
+            <span id="taskCount">0 tarefas pendentes</span>
+            <button id="clearAllBtn">Limpar Concluídas</button>
+        </footer>
+    </div>
+
+    <!-- Ligação ao arquivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
